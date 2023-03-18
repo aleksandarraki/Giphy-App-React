@@ -26,3 +26,8 @@ input:focus {
 h1 {
     text-align: center;
 }
+
+.card {
+    padding: 10px;
+    background-color: rgb(230, 225, 225);
+}
