@@ -1,0 +1,28 @@
+#results {
+    height: 100vh;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+}
+
+#search {
+    width: 80%;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+}
+
+input:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+h1 {
+    text-align: center;
+}

@@ -18,19 +18,17 @@ export const Main = () => {
             })
     }
 
-    const onPresEnter = (event) => {
-        if (event.key === "Enter") {
-            fetchGifs(term);
-            setTerm("");
-        }
-    }
+    useEffect(fetchGifs, [term]);
+
+
 
 
     return (
         <div className="container">
+            <h1>Search Giphy</h1>
             <div className="searchbar">
-                <label >Search Giphy</label>
-                <input id="search" type="search" value={term} onChange={onChangeTextInput} onKeyDown={onPresEnter} />
+
+                <input id="search" type="search" value={term} onChange={onChangeTextInput} />
 
             </div>
             <div id="results">
